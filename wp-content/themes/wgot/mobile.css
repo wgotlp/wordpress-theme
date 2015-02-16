@@ -1,0 +1,39 @@
+#sidebar, #recentaired {
+  display: none;
+}
+#header { 
+  background-image: none;
+}
+#header h1 { 
+  font-size: 24px;
+  font-weight: bold;
+}
+#main { 
+  margin: 0;
+  padding: 0;
+}
+#menu { 
+  font-size: 8pt;
+}
+#menu a { 
+  padding: 2px 4px;
+}
+#menu ul { 
+  padding: 0;
+}
+#menu ul li { 
+  padding: 0;
+  margin: 0;
+}
+#content { 
+  padding: 0;
+  border: 0;
+  width: 100%
+}
+#content .entry 
+{
+  padding: 5px 4px;
+}
+#footer { 
+  position: relative;
+}

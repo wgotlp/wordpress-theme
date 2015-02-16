@@ -1,0 +1,132 @@
+#content { 
+  margin: 0;
+  padding: 0 0 20px 0;
+}
+#schedule h2 { 
+  border: 0;
+}
+#schedule { 
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+}
+#schedule a:hover { 
+  text-decoration: underline;
+}
+#schedule table { 
+  text-align: center;
+  vertical-align: middle;
+  background-color: #999;
+  font-family: tahoma, sans-serif;
+  font-size: 9pt;
+  border-spacing: 1px;
+}
+#schedule table thead,
+#schedule table th { 
+  background-color: #9cc;
+  font-size: 8pt;
+}
+#schedule table tbody th { 
+  text-transform: lowercase;
+}
+#schedule table tbody th, #schedule table tbody td { 
+  line-height: 1.25em;
+  padding: 2px;
+}
+#schedule table td { 
+  padding: 0 1px;
+}
+#schedule tr, #schedule td { 
+}
+#schedule hr { 
+  border: 0;
+  height: 1px;
+  background-color: #aaa;
+  color: #aaa;
+}
+#caltable colgroup#time { 
+}
+#caltable colgroup#date { 
+  width: 13%;
+}
+#schedule table td,
+#schedule .onair { 
+  background-color: white;
+}
+#schedule table td.offair {
+  background-color: #ccc;
+}
+#schedule table td.talk, #schedule #note .talk { 
+  font-weight: bold;
+}
+#schedule .stream { 
+  background-color: #eec;
+}
+#schedule table td.music { 
+  background-color: #cde;
+}
+#schedule table td.tba { 
+  background-color: #eee;
+}
+#schedule #note { 
+  font-size: 0.8em;
+}
+#schedule #note span { 
+  border: 1px solid #999;
+  padding: 2px 4px;
+}
+@media print { 
+  body { 
+    width: 7.5in;
+    margin: 0.25in;
+    font-family: georgia serif;
+    font-size: 10pt;
+    background-color: white;
+    color: black;
+  }
+  a:link, a:visited { 
+    color: #520;
+    text-decoration: none;
+  }
+  #header {
+    background-image: none;
+    background-color: white;
+    text-align: center;
+  }
+  #main h2 { 
+    border: 0;
+    font-size: 11pt;
+    font-family: inherit;
+  }
+  #main, #content { 
+    border: 0;
+    margin: 0;
+    background-color: inherit;
+    color: inherit;
+  }
+  #header img, #menu, #footer, .hide { 
+    display: none;
+  }
+  #schedule table { 
+    border: 0;
+    margin: 0 0;
+    width: 100%;
+    background-color: #999;
+  }
+  #schedule table th, #schedule table td { 
+    border: 0;
+  }
+  #schedule table th { 
+    font-size: 7pt;
+    line-height: 1.1em;
+  }
+  #schedule table td { 
+    padding: 2px;
+    font-size: 7pt;
+    line-height: 1.05em;
+  }
+  #schedule table td.offair {
+    background-color: #bbb;
+  }
+}

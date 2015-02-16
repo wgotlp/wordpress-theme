@@ -1,0 +1,87 @@
+@import "/wp-content/themes/wgot/style.css";
+
+#proposal {
+  margin: 10px;
+  width: 75%;
+  min-width: 300px;
+  max-width: 600px;
+}
+#proposal h2 {
+  margin-top: 10px;
+  padding: 0;
+}
+#proposal input, 
+#proposal textarea {
+  display: block;
+}
+#proposal #duration input, #proposal #type input  {
+  display: inline;
+}
+#proposal #duration fieldset label {
+  margin-left: 5px;
+}
+#type fieldset input {
+  margin: 0 5px;
+}
+#proposal ol {
+  list-style-position: inside;
+}
+#proposal fieldset,
+#proposal ol li {
+  margin-top: 5px;
+}
+#proposal ol input {
+  display: inline;
+}
+#proposal #duration fieldset {
+  margin: 2px 4px;
+}
+#proposal fieldset textarea {
+  height: 6em;
+}
+#proposal fieldset textarea, 
+#proposal fieldset input[type="text"],
+#proposal fieldset input[type="submit"] {
+  border: 3px double #aaa;
+}
+#proposal fieldset input[type="submit"] {
+  margin: 5px;;
+}
+#proposal fieldset input[type="submit"]:hover {
+  background-color: #584f4f;
+  color: white;
+}
+#proposal fieldset input[type="submit"]:active {
+  background-color: #462e20;
+  color: #a87b50;
+}
+#proposal fieldset input[disabled="disabled"] { 
+  background-color: #ccc;
+}
+#proposal fieldset textarea {
+  width: 80%;
+}
+#proposal fieldset #title,
+#proposal fieldset ol li input {
+  width: 60%;
+}
+#proposal fieldset #description {
+  height: 12em;
+}
+#proposal dl {
+  margin-left: 10px;
+}
+#proposal dd {
+  margin: 0 0 4px 0;
+}
+#proposal dd ol li {
+  margin: 0;
+  padding: 0;
+} 
+#act fieldset {
+  float: left;
+  display: inline;
+}
+#act fieldset input {
+  width: 80px;
+}
