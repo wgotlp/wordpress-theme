@@ -28,7 +28,7 @@ function createLink($type, $url, $text)
 
 //
 // table cell wrapper
-function tableCell($str, $row_span, $col_span, $class)
+function tableCell($str, $row_span, $col_span, $class = "")
 {
   $cell = "        <td";
 
@@ -119,6 +119,14 @@ function streamCell($idx, $row_span = 2, $extra_info = "", $extra_style = "")
 function offAirCell($row_span = 1, $col_span = 1)
 {
   $out = tableCell('Off-Air', $row_span, $col_span, 'offair');
+  echo $out;
+}
+
+//
+// music cells convenience function
+function musicCell($row_span = 2, $col_span = 1)
+{
+  $out = tableCell('MUSIC', $row_span, $col_span);
   echo $out;
 }
 
