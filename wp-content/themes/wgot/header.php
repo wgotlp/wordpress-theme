@@ -30,37 +30,19 @@
 <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo('atom_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <link media="only screen and (max-device-width: 480px)" href="/wp-content/themes/wgot/mobile.css" type="text/css" rel="stylesheet" />
-<!-- ?php wp_get_archives('type=monthly&format=link'); ? -->
 <?php wp_head(); ?>
 <?php if (is_page('program')) { ?>
-
  <script type="text/javascript" src="/wp-content/themes/wgot/program-proposal/proposal.js"></script>
  </head>
  <body onload="setMode(true, 5)">
 
 <?php } else { ?>
 <link type="text/css" href="/skin/jplayer-black-and-yellow.css" rel="stylesheet" />
- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
- <script type="text/javascript" src="/js/jquery.jplayer.min.js"></script>
- <script type="text/javascript">
-    $(document).ready(function(){
-      $("#jquery_jplayer_1").jPlayer({
-        ready: function () {
-          $(this).jPlayer("setMedia", {
-		mp3: "http://usa6-vn.mixstream.net:8006/listen.pls"
-          }).jPlayer("play");
-        },
-        swfPath: "/js",
-        supplied: "mp3"
-      });
-    });
- </script>
  </head>
  <body>
 <?php } ?>
 
 <div id="header">
-  <!-- ?php require('jplayer.php'); ?-->
   <img src="/wp-content/themes/wgot/img/fist.png" alt="WGOT-LP tower &amp; fist logo" />
   <h1><a href="<?php bloginfo('siteurl'); ?>"><?php bloginfo('name'); ?></a></h1>
   <div id="tagline"><?php bloginfo('description'); ?></div>
