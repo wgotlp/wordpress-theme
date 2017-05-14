@@ -7,6 +7,7 @@ function createLink($type, $url, $text)
   $str = $text;
 
   if ($url != '') {
+    $tgt = '';
     if (strrpos($url, "http") === FALSE)
     {
       if ($type[0] == 'M') {
@@ -17,7 +18,10 @@ function createLink($type, $url, $text)
 
       $url = "/programming/" . $url . "/";
     }
-    $str = "<a href=\"" . $url . "\">$str</a>";
+    else {
+       $tgt = "target=\"_blank\"";
+    }
+    $str = "<a $tgt href=\"" . $url . "\">$str</a>";
   }
   return $str;
 }
@@ -80,7 +84,7 @@ function showCell($idx, $row_span = 2, $extra_info = "", $extra_style = "")
   {
     $class = "";
 
-    if ($show[$idx]['type'] == 'T')
+    if ($show[$idx]['type'] == 'T' && $show[$idx]['name'] != '(wildcard)')
     {
        $class .= "talk ";
     }
@@ -104,7 +108,7 @@ function showCell($idx, $row_span = 2, $extra_info = "", $extra_style = "")
 }
 
 //
-// strea-only blocks
+// stream-only blocks
 function streamCell($idx, $row_span = 2, $extra_info = "", $extra_style = "")
 {
    showCell($idx, $row_span, 'S', $extra_style);
