@@ -184,6 +184,9 @@ dd
   border: 0;
   color: inherit;
 }
+#wpstats {
+     display: none;
+}
 
 /* Main */
 #main {
