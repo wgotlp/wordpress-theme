@@ -1,18 +1,4 @@
 <div id="recentaired">
-<!--<h2><a href="/listen-live/">Now Playing</a></h2>
-<ul><li id="onair"><?php require('schedule/functions.php');
-$name = liveShow();
-$pos = strpos($name, ' - ');
-
-if ($pos === FALSE) {
-   $program = $name;
- }
- else {
-    $program = '<strong> ' . substr($name, 0, $pos) . '</strong> - <a href="/listen-live/">' . substr($name, $pos + 3, strlen($name) - ($pos + 3)) . '</a>';
-//    $program = '<a href="/listen-live/">' . substr($name, $pos + 3, strlen($name) - ($pos + 3)) . '</a>';
- }
-
-echo $program; ?></li></ul>-->
 <h2><a href="/category/playlists/">Recently Aired</a></h2>
 <ul>
 <?php
