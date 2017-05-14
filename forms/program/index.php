@@ -157,7 +157,7 @@ function outputIfSet($field, $idx = 0)
 
 <div id="header">
   <img src="/wp-content/themes/wgot/img/fist.png" alt="WGOT-LP tower &amp; fist logo" />
-  <h1><a href="/">WGOT-LP 94.7 FM Program Proposal</a></h1>
+  <h1><a href="/">WGOT-LP 100.1 FM Program Proposal</a></h1>
 </div>
 
 <div id="menu">
@@ -389,11 +389,11 @@ that it is correct and click <cite>Send</cite>.</p>
       fclose($handle);
 
       // email notification
-      $from_email = "social@wgot.org";
+      $from_email = "proposals@wgot.org";
       $headers = 'From: ' . $from_email . "\r\n" .
         'Reply-To: ' . $from_email . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
-      mail("proposals@wgot.org", "Form submission", $output, $headers);
+      mail($from_email, "Form submission", $output, $headers);
    }
    else {
       $status = false;
@@ -423,7 +423,7 @@ that it is correct and click <cite>Send</cite>.</p>
 </div>
 
 <div id="footer">
-<p><strong>WGOT-LP 94.7 FM</strong> is a 501[c][3] Non-profit. Powered
+<p><strong>WGOT-LP 100.1 FM</strong> is a 501[c][3] Non-profit. Powered
 by <a href="http://wordpress.org/">WordPress</a>.</p>
 </div>
 
