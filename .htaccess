@@ -6,7 +6,7 @@ SecFilterScanPOST Off
 </IfModule>
 Redirect /calendar http://www.wgot.org/schedule
 Redirect /cpanel https://www.google.com/a/cpanel/wgot.org/
-Redirect /listen http://usa6-vn.mixstream.net:8006/listen.pls
+# Redirect /listen http://usa6-vn.mixstream.net:8006/listen.pls
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On

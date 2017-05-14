@@ -164,9 +164,9 @@ function outputIfSet($field, $idx = 0)
 <ul>
   <li class="page_item page-item-1"><a href="/" title="Home">Home</a></li>
   <li class="page_item page-item-2"><a href="/about/" title="About">About</a></li>
+  <!-- li class="page_item page-item-5972"><a href="/listen-live/">Listen Live</a></li -->
   <li class="page_item page-item-37"><a href="/programming/" title="Our Programs">Programs</a></li>
   <li class="page_item page-item-2089"><a href="/schedule/">Schedule</a></li>
-  <li class="page_item page-item-5972"><a href="/schedule/">Schedule</a></li>
 </ul>
 </div>
 
@@ -424,10 +424,7 @@ that it is correct and click <cite>Send</cite>.</p>
 
 <div id="footer">
 <p><strong>WGOT-LP 94.7 FM</strong> is a 501[c][3] Non-profit. Powered
-by <a href="http://wordpress.org/">WordPress</a> &amp; <a
-href="http://validator.w3.org/check/referer" title="This page
-validates as XHTML 1.0 Transitional"><abbr title="eXtensible HyperText
-Markup Language">XHTML</abbr>-compliant</a>.</p>
+by <a href="http://wordpress.org/">WordPress</a>.</p>
 </div>
 
 </body>
