@@ -9,6 +9,12 @@
 </fieldset>
 </form>
 
+<?php if (!is_home() && !is_page('calendar') && !is_page('contact-us') && (in_category('13') || is_tag())) {
+         if ( function_exists('wp_tag_cloud') ) : ?>
+<h2>Programs</h2>
+<?php wp_tag_cloud('smallest=8&largest=8&format=list'); ?>
+<?php endif; } ?>
+
 <h2><?php _e('Station Info'); ?></h2>
 <ul>
 <?php wp_list_pages('title_li=&depth=2&exclude=6284' ); ?>
@@ -35,12 +41,6 @@
 </ul>
 <?php } ?>
 -->
-
-<?php if (!is_home() && !is_page('calendar') && !is_page('contact-us') && (in_category('13') || is_tag())) {
-         if ( function_exists('wp_tag_cloud') ) : ?>
-<h2>Programs</h2>
-<?php wp_tag_cloud('smallest=8&largest=8&format=list'); ?>
-<?php endif; } ?>
 
 <h2>Support Us</h2>
 <ul id="donate">
