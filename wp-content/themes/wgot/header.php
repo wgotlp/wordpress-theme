@@ -12,6 +12,7 @@
 <title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
 <meta http-equiv="Content-Type" content="text/html; charset=<?php bloginfo('charset'); ?>" />
 <meta name="google-site-verification" content="8VfAy3pkBG25JYTKzqVMutLnowJTsyhRY2d1qlybbqc" />
+<meta name="description" content="<?php bloginfo('description'); ?>" />
 <style type="text/css">
 	@import url( <?php bloginfo('stylesheet_url'); ?> );
 <?php if (is_page('schedule')) { ?>
