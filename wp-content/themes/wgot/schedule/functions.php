@@ -84,18 +84,22 @@ function showCell($idx, $row_span = 2, $extra_info = "", $extra_style = "")
   {
     $class = "";
 
-    if ($show[$idx]['type'] == 'T' && $show[$idx]['name'] != '(wildcard)')
+    if ($show[$idx]['type'] == 'M')
     {
+       $class .= "music ";
+    }
+	else {
        $class .= "talk ";
+    }
+
+	if ($idx == 'wc')
+	{
+       $class .= "wc ";
     }
 
     $cell_content = "";
 
-    if ($extra_info == "S")
-    {
-       $class .= "stream";
-    }
-    else
+    if ($extra_info != "")
     {
        $cell_content .= $extra_info;
     }
@@ -135,7 +139,7 @@ function offAirCell($row_span = 1, $col_span = 1)
 // music cells convenience function
 function musicCell($row_span = 2, $col_span = 1)
 {
-  $out = tableCell('MUSIC', $row_span, $col_span);
+  $out = tableCell('MUSIC', $row_span, $col_span, 'music');
   echo $out;
 }
 

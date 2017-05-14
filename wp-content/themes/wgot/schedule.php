@@ -15,7 +15,7 @@ abstract class ProgramBlockLengths
 
 $show = array(
      // len is not specified for these so you must pass one of the above LEN_ constants if the block is not 1-hour long
- 	 'mes'   => array(type => 'M',  name => 'Música en Español',             link => ''),
+     'mes'   => array(type => 'M',  name => 'Música en Español',             link => ''),
      'wc'    => array(type => 'M',  name => '(wildcard)',                    link => ''),
 
      'AER'   => array(type => 'T',  name => 'Arts Express Radio',            len => LEN_060,  link => 'http://wbai.org/program.php?program=164'),
@@ -66,7 +66,7 @@ require('schedule/functions.php');
 <h2>Program Schedule</h2>
 
 <p id="note">Updated: <?php echo date( "M d, Y", filemtime(__FILE__) ) ?>. 
-Legend: Music Program | <strong>Talk Program</strong><!-- | <span class="onair">On Air + Stream</span> | <span class="stream">Stream Only</span>--></p>
+Legend: <span class="music">Music Program</span> <span class="talk">Talk Program</span></p>
 
 <table id="caltable" border="0">
 <colgroup id="time" span="1"></colgroup>
@@ -287,12 +287,12 @@ Legend: Music Program | <strong>Talk Program</strong><!-- | <span class="onair">
 <?php
    timeCell('12:30');
 
-   showCell('mes', LEN_030);
-   showCell('mes', LEN_030);
-   showCell('mes', LEN_030);
-   showCell('mes', LEN_030);
-   showCell('mes', LEN_030);
-   showCell('mes', LEN_030);
+   showCell('mes', 1);
+   showCell('mes', 1);
+   showCell('mes', 1);
+   showCell('mes', 1);
+   showCell('mes', 1);
+   showCell('mes', 1);
 ?>
 </tr>
 <tr>

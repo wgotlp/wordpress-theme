@@ -24,7 +24,8 @@
 }
 #schedule table thead,
 #schedule table th { 
-  background-color: #9cc;
+//  background-color: #9cc;
+  background-color: #ccc;
   font-size: 8pt;
 }
 #schedule table tbody th { 
@@ -57,14 +58,15 @@
 #schedule table td.offair {
   background-color: #ccc;
 }
-#schedule table td.talk, #schedule #note .talk { 
-  font-weight: bold;
-}
-#schedule .stream { 
+#schedule .talk, #schedule #note .talk { 
   background-color: #eec;
 }
-#schedule table td.music { 
-  background-color: #cde;
+#schedule .music { 
+//  background-color: #cde;
+  background-color: #d9ece2;
+}
+#schedule .wc { 
+  background-color: #eee;
 }
 #schedule table td.tba { 
   background-color: #eee;
@@ -100,7 +102,7 @@
 	height: auto;
   }
   #header h1 {
-	font-size: 2.5em;
+	font-size: 1.75em;
 	margin: 0;
 	padding: 0;  
   }
