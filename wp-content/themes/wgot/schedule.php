@@ -5,48 +5,44 @@ Template Name: Schedule
 ?>
 <?php
 $show = array(
-     'AW'    => array(type => 'M',  name => 'Afropop Worldwide',             link => 'http://www.afropop.org/wp/'),
-     'AER'   => array(type => 'T',  name => 'Arts Express Radio',            link => 'arts-express-radio'),
-     'AR'    => array(type => 'T',  name => 'Alternative Radio',             link => 'alternative-radio'),
-     'AAR'   => array(type => 'M',  name => 'Artists Related',               link => 'artists-related'),
+     'AER'   => array(type => 'T',  name => 'Arts Express Radio',            link => 'http://wbai.org/program.php?program=164'),
+     'AR'    => array(type => 'T',  name => 'Alternative Radio',             link => 'http://www.alternativeradio.org/'),
+     'AW'    => array(type => 'M',  name => 'Afropop Worldwide',             link => 'http://www.afropop.org/'),
      'BIM'   => array(type => 'M',  name => 'Big Island Mix',                link => 'big-island-mix'),
-     'BB'    => array(type => 'T',  name => 'Building Bridges',              link => 'building-bridges'),
+     'BB'    => array(type => 'T',  name => 'Building Bridges',              link => 'http://buildingbridgesradio.blogspot.com/'),
      'CMS'   => array(type => 'M',  name => 'Cramela Mix Show',              link => 'cramela-mix-show'),
      'CR'    => array(type => 'T',  name => 'CMC/Counterpoise',              link => 'counterpoise-reviews'),
      'COL'   => array(type => 'T',  name => 'Century of Lies',               link => 'http://www.drugtruth.net/cms/views/latest_col'),
-     'COV'   => array(type => 'T',  name => 'Community/Voices',              link => 'a-community-of-voices'),
      'D'     => array(type => 'M',  name => 'Departure',                     link => 'departure'),
-     'DN'    => array(type => 'T',  name => 'Democracy Now!',                link => 'democracy-now'),
-     'EB'    => array(type => 'T',  name => 'Earthbeat',                     link => 'earthbeat'),
-     'E2F'   => array(type => 'M',  name => 'Ecstasy to Frenzy',             link => ''),
-     'ES'    => array(type => 'T',  name => 'EcoShock',                      link => 'radio-ecoshock'),
-     'FC'    => array(type => 'T',  name => 'Feminist Current',              link => 'http://feministcurrent.com/'),
-     'GT'    => array(type => 'T',  name => 'Gallery Talk',                  link => 'gallery-talk'),
+     'DN'    => array(type => 'T',  name => 'Democracy Now!',                link => 'http://www.democracynow.org/'),
+     'E2F'   => array(type => 'M',  name => 'Ecstasy to Frenzy',             link => 'ecstasy-to-frenzy'),
+     'ES'    => array(type => 'T',  name => 'EcoShock',                      link => 'http://www.ecoshock.org/'),
      'GC'    => array(type => 'T',  name => 'Good Company',                  link => 'good-company'),
      'HBTR'  => array(type => 'M',  name => 'Heartbeattrue Radio',           link => 'heartbeattrue-radio'),
      'HS'    => array(type => 'M',  name => 'Hippie Sessions',               link => 'hippie-sessions'),
-     'IP'    => array(type => 'T',  name => 'Informativo',                   link => 'informativo-pacifica'),
+     'IP'    => array(type => 'T',  name => 'Informativo',                   link => 'http://www.kpfk.org/index.php/programs/116-informativopacifica'),
      'JV'    => array(type => 'M',  name => 'Jazzville',                     link => 'jazzville'),
      'JCS'   => array(type => 'M',  name => 'Joe & Craig',                   link => 'joe-craig-show'),
+     'LOI'   => array(type => 'M',  name => 'Last One In',                   link => 'last-one-in'),
      'm'     => array(type => 'M',  name => '(music)',                       link => ''),
      'MAL'   => array(type => 'M',  name => 'Malum',                         link => 'malum'),
-     'MM'    => array(type => 'M',  name => 'Music Mosaic',                  link => 'music-mosaic'),
-     'MTS'   => array(type => 'M',  name => 'Mixtape Sessions',              link => 'mixtape-sessions'),
+     'MS'    => array(type => 'M',  name => 'Mixtape Sessions',              link => 'mixtape-sessions'),
      'NL'    => array(type => 'M',  name => 'Noche Latina',                  link => 'noche-latina'),
+     'RR'    => array(type => 'M',  name => 'Rad Radio',                     link => ''),
      'RPMH'  => array(type => 'M',  name => 'Red Pony Music Hour',           link => 'red-pony-music-hour'),
-     'RR'    => array(type => 'M',  name => 'Replay Radio',                  link => 'replay-radio'),
-     'SM'    => array(type => 'M',  name => 'Sábado Musical',                link => 'sabado-musical'),
-     'SCR'   => array(type => 'T',  name => 'Sierra Club Radio',             link => 'sierra-club-radio'),
+     'SM'    => array(type => 'M',  name => 'Sábado Musical',                link => 'sabado-musical-2'),
+     'SCR'   => array(type => 'T',  name => 'Sierra Club Radio',             link => 'http://www.sierraclub.org/radio/'),
      'S'     => array(type => 'T',  name => 'Stripped',                      link => 'stripped'),
-     'SPR'   => array(type => 'T',  name => 'So Pro Radio',                  link => 'sopro-radio'),
      'SR'    => array(type => 'M',  name => 'Sweet Retreat',                 link => 'sweet-retreat'),
-     'TBBA'  => array(type => 'M',  name => 'Things be Blowin\' Around',     link => ''),
-     'TWO'   => array(type => 'T',  name => 'This Way Out',                  link => 'this-way-out'),
+     'TBBA'  => array(type => 'M',  name => 'Things be Blowin\' Around',     link => 'things-be-blowin-around'),
+     'TMSS'  => array(type => 'T',  name => 'The Michael Slate Show',        link => 'http://www.kpfk.org/index.php/programs/51-michael-slate'),
+     'TIG'   => array(type => 'T',  name => '(wildcard)',                    link => ''),
+     'TWO'   => array(type => 'T',  name => 'This Way Out',                  link => 'http://www.thiswayout.org/'),
      'wc'    => array(type => 'M',  name => '(wildcard)',                    link => ''),
      'WPP'   => array(type => 'M',  name => 'WGOT Playlist Project',         link => ''),
-     'WNR'   => array(type => 'T',  name => 'War News Radio',                link => 'war-news-radio'),
-     'WV'    => array(type => 'T',  name => 'Writer\'s Voice',               link => 'writers-voice'),
-     'YOHAF' => array(type => 'T',  name => 'Health &amp; Fitness',          link => 'your-own-health-fitness'),
+     'WS'    => array(type => 'M',  name => 'Woodsongs Radio',               link => ''),
+     'WV'    => array(type => 'T',  name => 'Writer\'s Voice',               link => 'http://www.writersvoice.net/'),
+     'YOHAF' => array(type => 'T',  name => 'Health &amp; Fitness',          link => 'http://www.yourownhealthandfitness.org/'),
      );
 
 require('schedule/functions.php');
@@ -60,7 +56,7 @@ require('schedule/functions.php');
 <h2>Program Schedule</h2>
 
 <p id="note">Updated: <?php echo date( "M d, Y", filemtime(__FILE__) ) ?>. 
-Legend: Music Program | <strong>Talk Program</strong> | <span class="onair">On Air + Stream</span> | <span class="stream">Stream Only</span></p>
+Legend: Music Program | <strong>Talk Program</strong><!-- | <span class="onair">On Air + Stream</span> | <span class="stream">Stream Only</span>--></p>
 
 <table id="caltable" border="0">
 <colgroup id="time" span="1"></colgroup>
@@ -82,27 +78,26 @@ Legend: Music Program | <strong>Talk Program</strong> | <span class="onair">On A
 <?php
         timeCell('12:00am');
 
-	streamCell('E2F', 4);
-	showCell('AAR');
-	streamCell('AAR');
-	showCell('HBTR');
-	streamCell('NL');
+	offAirCell(11, 1);
+	showCell('TMSS');
+	offAirCell(11, 1);
+	showCell('SR');
+	offAirCell(11, 1);
 	showCell('MAL');
-	streamCell('CMS');
+	offAirCell(11, 1);
 ?>
 </tr>
 <tr>
-<?php  timeCell('12:30'); ?>
+<?php   timeCell('12:30');
+
+?>
 </tr>
 <tr>
 <?php
         timeCell('1:00');
 	showCell('E2F', 4);
-	streamCell('HS');
 	showCell('CMS', 4);
-	streamCell('AW');
-	showCell('AAR');
-	streamCell('RR');
+	showCell('TBBA', 4);
 ?>
 </tr>
 <tr>
@@ -114,11 +109,6 @@ Legend: Music Program | <strong>Talk Program</strong> | <span class="onair">On A
 <?php
         timeCell('2:00');
 
-	streamCell('m', 7);
-	streamCell('SPR');
-	streamCell('AAR');
-	showCell('HS');
-	streamCell('SR');
 ?>
 </tr>
 <tr>
@@ -129,11 +119,8 @@ Legend: Music Program | <strong>Talk Program</strong> | <span class="onair">On A
         timeCell('3:00');
 
 	showCell('JV', 4);
-	streamCell('NL');
-	showCell('RR');
-	streamCell('D');
-	showCell('MTS');
-	streamCell('wc');
+	showCell('WV');
+	showCell('HS');
 ?>
 </tr>
 <tr>
@@ -144,11 +131,8 @@ Legend: Music Program | <strong>Talk Program</strong> | <span class="onair">On A
 <?php
         timeCell('4:00');
 
-	streamCell('m', 3);
 	showCell('AW');
-	streamCell('BIM');
-	showCell('MM');
-	streamCell('MTS');
+	showCell('WS');
 ?>
 </tr>
 <tr>
@@ -158,111 +142,11 @@ Legend: Music Program | <strong>Talk Program</strong> | <span class="onair">On A
 </tr>
 <tr>
 <?php
-        timeCell('5am<br />-<br />7am');
+        timeCell('5am<br />-<br />1pm');
 
-	streamCell('m', 1);
-	streamCell('m', 1);
-	streamCell('m', 1);
-	streamCell('m', 13);
-	streamCell('m', 13);
-?>
-</tr>
-<tr>
-<?php
-        timeCell('7:00');
-
-	streamCell('DN');
-	streamCell('DN');
-	streamCell('DN');
-	streamCell('DN');
-	streamCell('DN');
-?>
-</tr>
-<tr>
-<?php
-        timeCell('7:30');
-?>
-</tr>
-<tr>
-<?php
-        timeCell('8:00');
-
-	streamCell('YOHAF');
-	streamCell('RPMH');
-	streamCell('CR');
-	streamCell('GC', 1);
-	streamCell('HBTR');
-?>
-</tr>
-<tr>
-<?php
-        timeCell('8:30');
-
-	streamCell('TWO', 1);
-?>
-</tr>
-<tr>
-<?php
-        timeCell('9:00');
-
-	streamCell('S', 4);
-	streamCell('ES');
-	streamCell('YOHAF');
-	streamCell('CR');
-	streamCell('AER');
-?>
-</tr>
-<tr>
-<?php
-        timeCell('9:30');
-?>
-</tr>
-
-<tr>
-<?php
-        timeCell('10:00');
-
-	streamCell('IP', 1);
-	streamCell('IP', 1);
-	streamCell('IP', 1);
-	streamCell('IP', 1);
-?>
-</tr>
-<tr>
-<?php
-        timeCell('10:30');
-	streamCell('IP', 1);
-	streamCell('IP', 1);
-	streamCell('IP', 1);
-	streamCell('IP', 1);
-?>
-</tr>
-<tr>
-<?php
-        timeCell('11:00');
-
-	streamCell('TBBA', 4);
-	streamCell('WV');
-	streamCell('E2F', 4);
-	streamCell('TBBA', 4);
-	streamCell('JV', 4);
-?>
-</tr>
-<tr>
-<?php
-        timeCell('11:30');
-?>
-</tr>
-<tr>
-<?php
-        timeCell('12:00');
-
-	streamCell('COL');
-?>
-</tr>
-<tr>
-<?php
-        timeCell('12:30');
+	offAirCell(1, 1);
+	offAirCell(1, 1);
+	offAirCell(1, 1);
 ?>
 </tr>
 <tr>
@@ -289,11 +173,11 @@ Legend: Music Program | <strong>Talk Program</strong> | <span class="onair">On A
         timeCell('2:00');
 
 	showCell('CMS', 4);
-	showCell('E2F', 4);
-	showCell('WV');
+	showCell('WS', 2);
+	showCell('S');
 	showCell('BB', 1);
 	showCell('CR');
-	showCell('GC', 1);
+	showCell('TWO', 1);
 	showCell('HBTR');
 
 ?>
@@ -303,15 +187,16 @@ Legend: Music Program | <strong>Talk Program</strong> | <span class="onair">On A
         timeCell('2:30');
 
 	showCell('SCR', 1);
-	showCell('TWO', 1);
+	showCell('TIG', 1);
 ?>
 </tr>
 <tr>
 <?php
         timeCell('3:00');
 
+	showCell('AW');
 	showCell('HS');
-	showCell('MTS');
+	showCell('HBTR');
 	showCell('RPMH');
 	showCell('YOHAF');
 	showCell('NL');
@@ -326,13 +211,13 @@ Legend: Music Program | <strong>Talk Program</strong> | <span class="onair">On A
 <?php
         timeCell('4:00');
 
-	streamCell('DN');
-	streamCell('DN');
-	streamCell('DN');
-	streamCell('DN');
-	streamCell('DN');
+	offAirCell(8, 1);
+	offAirCell(8, 1);
+	offAirCell(8, 1);
+	offAirCell(8, 1);
+	offAirCell(8, 1);
 	showCell('AR');
-	streamCell('TBBA', 4);
+	offAirCell(16, 1);
 ?>
 </tr>
 <tr>
@@ -344,32 +229,20 @@ Legend: Music Program | <strong>Talk Program</strong> | <span class="onair">On A
 <?php
         timeCell('5:00');
 
-	streamCell('AER');
-	streamCell('wc');
-	streamCell('BB', 1);
-	streamCell('AW');
-	streamCell('JCS');
-	showCell('SPR');
+	showCell('RR');
 ?>
 </tr>
 <tr>
 <?php
         timeCell('5:30');
 
-	streamCell('SCR', 1);
 ?>
 </tr>
 <tr>
 <?php
         timeCell('6:00');
 
-	streamCell('D');
-	streamCell('BIM');
-	streamCell('HS');
-	streamCell('MTS');
-	streamCell('wc');
 	showCell('SR');
-	streamCell('CMS', 4);
 ?>
 </tr>
 <tr>
@@ -381,22 +254,13 @@ Legend: Music Program | <strong>Talk Program</strong> | <span class="onair">On A
 <?php
         timeCell('7:00');
 
-	streamCell('JCS');
-	streamCell('IP', 1);
-	streamCell('IP', 1);
-	streamCell('IP', 1);
-	streamCell('IP', 1);
-	showCell('RR');
+	showCell('LOI');
 ?>
 </tr>
 <tr>
 <?php
         timeCell('7:30');
 
-	streamCell('IP', 1);
-	streamCell('IP', 1);
-	streamCell('IP', 1);
-	streamCell('IP', 1);
 ?>
 </tr>
 <tr>
@@ -407,9 +271,8 @@ Legend: Music Program | <strong>Talk Program</strong> | <span class="onair">On A
 	showCell('JCS');
 	showCell('JV', 4);
 	showCell('ES');
-	showCell('TBBA', 4);
+	showCell('AR');
 	showCell('S');
-	streamCell('RR');
 ?>
 </tr>
 <tr>
@@ -420,16 +283,15 @@ Legend: Music Program | <strong>Talk Program</strong> | <span class="onair">On A
         timeCell('9:00');
 
 	showCell('NL');
-	streamCell('HBTR');
-	streamCell('GC', 1);
-	streamCell('S');
-	streamCell('MAL');
+	offAirCell(6, 1);
+	offAirCell(6, 1);
+	showCell('RR');
+	offAirCell(6, 1);
 ?>
 </tr>
 <tr>
 <?php
         timeCell('9:30');
-	streamCell('TWO', 1);
 ?>
 </tr>
 <tr>
@@ -437,12 +299,8 @@ Legend: Music Program | <strong>Talk Program</strong> | <span class="onair">On A
         timeCell('10:00');
 
 	showCell('S', 4);
-	streamCell('MAL');
-	showCell('AW');
-	streamCell('SR');
+	showCell('HBTR');
 	showCell('BIM');
-	streamCell('NL');
-	streamCell('JV', 4);
 ?>
 </tr>
 <tr>
@@ -454,11 +312,8 @@ Legend: Music Program | <strong>Talk Program</strong> | <span class="onair">On A
 <?php
         timeCell('11:00');
 
-	streamCell('D');
 	showCell('RPMH');
-	streamCell('RPMH');
 	showCell('D');
-	streamCell('CMS');
 ?>
 </tr>
 <tr>
@@ -476,4 +331,4 @@ Legend: Music Program | <strong>Talk Program</strong> | <span class="onair">On A
 </div>
 </div>
 
-<?php get_footer();?>
+<?php get_footer(); ?>
