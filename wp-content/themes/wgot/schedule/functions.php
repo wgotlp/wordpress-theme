@@ -102,6 +102,15 @@ function showCell($idx, $row_span = 2, $extra_info = "", $extra_style = "")
 
     $cell_content = createLink($show[$idx]['type'], $show[$idx]['link'], $show[$idx]['name']) . $cell_content;
 
+	if (array_key_exists(len, $show[$idx]))
+	{
+		switch ($show[$idx]['len']) {
+           case LEN_030: $row_span = 1; break;
+           case LEN_060: $row_span = 2; break;
+           case LEN_120: $row_span = 4; break;
+		}
+    }
+
     $out = tableCell($cell_content, $row_span, 1, $class);
   }
   echo $out;

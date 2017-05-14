@@ -4,50 +4,55 @@ Template Name: Schedule
 */
 ?>
 <?php
+
+abstract class ProgramBlockLengths
+{
+   const LEN_030 = 1;
+   const LEN_060 = 2;
+   const LEN_120 = 4;
+    // etc.
+}
+
 $show = array(
-     'mes'   => array(type => 'M',  name => 'Música en Español',             link => ''),
+     // len is not specified for these so you must pass one of the above LEN_ constants if the block is not 1-hour long
+ 	 'mes'   => array(type => 'M',  name => 'Música en Español',             link => ''),
      'wc'    => array(type => 'M',  name => '(wildcard)',                    link => ''),
-     'AER'   => array(type => 'T',  name => 'Arts Express Radio',            link => 'http://wbai.org/program.php?program=164'),
-     'AR'    => array(type => 'T',  name => 'Alternative Radio',             link => 'http://www.alternativeradio.org/'),
-     'AW'    => array(type => 'M',  name => 'Afropop Worldwide',             link => 'http://www.afropop.org/'),
-     'BIM'   => array(type => 'M',  name => 'Big Island Mix',                link => 'big-island-mix'),
-     'BB'    => array(type => 'T',  name => 'Building Bridges',              link => 'http://buildingbridgesradio.blogspot.com/'),
-     'CMS'   => array(type => 'M',  name => 'Cramela Mix Show',              link => 'cramela-mix-show'),
-     'CR'    => array(type => 'T',  name => 'CMC/Counterpoise',              link => 'counterpoise-reviews'),
-     'COL'   => array(type => 'T',  name => 'Century of Lies',               link => 'http://www.drugtruth.net/cms/views/latest_col'),
-     'D'     => array(type => 'M',  name => 'Departure',                     link => 'departure'),
-     'DN'    => array(type => 'T',  name => 'Democracy Now!',                link => 'http://www.democracynow.org/'),
-     'E2F'   => array(type => 'M',  name => 'Ecstasy to Frenzy',             link => 'ecstasy-to-frenzy'),
-     'ES'    => array(type => 'T',  name => 'EcoShock',                      link => 'http://www.ecoshock.org/'),
-     'EU'    => array(type => 'T',  name => 'Economic Update',               link => ''),
-     'GC'    => array(type => 'T',  name => 'Good Company',                  link => 'good-company'),
-     'HBTR'  => array(type => 'M',  name => 'Heartbeattrue Radio',           link => 'heartbeattrue-radio'),
-     'HS'    => array(type => 'M',  name => 'Hippie Sessions',               link => 'hippie-sessions'),
-     'IP'    => array(type => 'T',  name => 'Informativo',                   link => 'http://www.kpfk.org/index.php/programs/116-informativopacifica'),
-     'JV'    => array(type => 'M',  name => 'Jazzville',                     link => 'jazzville'),
-     'JCS'   => array(type => 'M',  name => 'Joe & Craig',                   link => 'joe-craig-show'),
-     'LOI'   => array(type => 'M',  name => 'Last One In',                   link => 'last-one-in'),
-     'MAL'   => array(type => 'M',  name => 'Malum',                         link => 'malum'),
-     'MS'    => array(type => 'M',  name => 'Mixtape Sessions',              link => 'mixtape-sessions'),
-     'NL'    => array(type => 'M',  name => 'Noche Latina',                  link => 'noche-latina'),
-     'PWS'   => array(type => 'T',  name => 'Pow Wow Show',                  link => 'http://thepowwowshow.net/'),
-     'RR'    => array(type => 'M',  name => 'Rad Radio',                     link => ''),
-     'RSR'   => array(type => 'M',  name => 'Rootstock Radio',               link => 'https://www.rootstock.coop/radio/'),
-     'RPMH'  => array(type => 'M',  name => 'Red Pony Music Hour',           link => 'red-pony-music-hour'),
-     'SM'    => array(type => 'M',  name => 'Sábado Musical',                link => 'sabado-musical-2'),
-     'SCR'   => array(type => 'T',  name => 'Sierra Club Radio',             link => 'http://www.sierraclub.org/radio/'),
-     'S'     => array(type => 'T',  name => 'Stripped',                      link => 'stripped'),
-     'SMH'   => array(type => 'M',  name => 'Stripped Music Hour',           link => 'stripped'),
-     'SHA'   => array(type => 'M',  name => 'Shadows',                       link => ''),
-     'SR'    => array(type => 'M',  name => 'Sweet Retreat',                 link => 'sweet-retreat'),
-     'TBBA'  => array(type => 'M',  name => 'Things be Blowin\' Around',     link => 'things-be-blowin-around'),
-     'TMSS'  => array(type => 'T',  name => 'The Michael Slate Show',        link => 'http://www.kpfk.org/index.php/programs/51-michael-slate'),
-     'TIG'   => array(type => 'T',  name => '(wildcard)',                    link => ''),
-     'TWO'   => array(type => 'T',  name => 'This Way Out',                  link => 'http://www.thiswayout.org/'),
-     'WPP'   => array(type => 'M',  name => 'WGOT Playlist Project',         link => ''),
-     'WS'    => array(type => 'M',  name => 'Woodsongs Radio',               link => ''),
-     'WV'    => array(type => 'T',  name => 'Writer\'s Voice',               link => 'http://www.writersvoice.net/'),
-     'YOHAF' => array(type => 'T',  name => 'Health &amp; Fitness',          link => 'http://www.yourownhealthandfitness.org/'),
+
+     'AER'   => array(type => 'T',  name => 'Arts Express Radio',            len => LEN_060,  link => 'http://wbai.org/program.php?program=164'),
+     'AR'    => array(type => 'T',  name => 'Alternative Radio',             len => LEN_060,  link => 'http://www.alternativeradio.org/'),
+     'AW'    => array(type => 'M',  name => 'Afropop Worldwide',             len => LEN_060,  link => 'http://www.afropop.org/'),
+     'BIM'   => array(type => 'M',  name => 'Big Island Mix',                len => LEN_060,  link => 'big-island-mix'),
+     'BB'    => array(type => 'T',  name => 'Building Bridges',              len => LEN_030,  link => 'http://buildingbridgesradio.blogspot.com/'),
+     'CMS'   => array(type => 'M',  name => 'Cramela Mix Show',              len => LEN_120,  link => 'cramela-mix-show'),
+     'CR'    => array(type => 'T',  name => 'CMC/Counterpoise',              len => LEN_060,  link => 'counterpoise-reviews'),
+     'COL'   => array(type => 'T',  name => 'Century of Lies',               len => LEN_030,  link => 'http://www.drugtruth.net/cms/views/latest_col'),
+     'D'     => array(type => 'M',  name => 'Departure',                     len => LEN_060,  link => 'departure'),
+     'DN'    => array(type => 'T',  name => 'Democracy Now!',                len => LEN_060,  link => 'http://www.democracynow.org/'),
+     'ES'    => array(type => 'T',  name => 'EcoShock',                      len => LEN_060,  link => 'http://www.ecoshock.org/'),
+     'EU'    => array(type => 'T',  name => 'Economic Update',               len => LEN_060,  link => 'http://www.democracyatwork.info/economicupdate'),
+     'HBTR'  => array(type => 'M',  name => 'Heartbeattrue Radio',           len => LEN_060,  link => 'heartbeattrue-radio'),
+     'HS'    => array(type => 'M',  name => 'Hippie Sessions',               len => LEN_060,  link => 'hippie-sessions'),
+     'IP'    => array(type => 'T',  name => 'Informativo',                   len => LEN_030,  link => 'http://www.kpfk.org/index.php/programs/116-informativopacifica'),
+     'JV'    => array(type => 'M',  name => 'Jazzville',                     len => LEN_120,  link => 'jazzville'),
+     'JCS'   => array(type => 'M',  name => 'Joe & Craig',                   len => LEN_060,  link => 'joe-craig-show'),
+     'LOI'   => array(type => 'M',  name => 'Last One In',                   len => LEN_060,  link => 'last-one-in'),
+     'MAL'   => array(type => 'M',  name => 'Malum',                         len => LEN_060,  link => 'malum'),
+     'NL'    => array(type => 'M',  name => 'Noche Latina',                  len => LEN_060,  link => 'noche-latina'),
+     'PWS'   => array(type => 'T',  name => 'Pow Wow Show',                  len => LEN_120,  link => 'http://thepowwowshow.net/'),
+     'RR'    => array(type => 'M',  name => 'Rad Radio',                     len => LEN_060,  link => ''),
+     'RSR'   => array(type => 'M',  name => 'Rootstock Radio',               len => LEN_030,  link => 'https://www.rootstock.coop/radio/'),
+     'RPMH'  => array(type => 'M',  name => 'Red Pony Music Hour',           len => LEN_060,  link => 'red-pony-music-hour'),
+     'SM'    => array(type => 'M',  name => 'Sábado Musical',                len => LEN_060,  link => 'sabado-musical-2'),
+     'S'     => array(type => 'T',  name => 'Stripped',                      len => LEN_060,  link => 'stripped'),
+     'SMH'   => array(type => 'M',  name => 'Stripped Music Hour',           len => LEN_060,  link => 'stripped'),
+     'SHA'   => array(type => 'M',  name => 'Shadows',                       len => LEN_060,  link => ''),
+     'SR'    => array(type => 'M',  name => 'Sweet Retreat',                 len => LEN_060,  link => 'sweet-retreat'),
+     'TBBA'  => array(type => 'M',  name => 'Things be Blowin\' Around',     len => LEN_120,  link => 'things-be-blowin-around'),
+     'TMSS'  => array(type => 'T',  name => 'The Michael Slate Show',        len => LEN_060,  link => 'http://www.kpfk.org/index.php/programs/51-michael-slate'),
+     'TWO'   => array(type => 'T',  name => 'This Way Out',                  len => LEN_030,  link => 'http://www.thiswayout.org/'),
+     'WS'    => array(type => 'M',  name => 'Woodsongs Radio',               len => LEN_060,  link => ''),
+     'WV'    => array(type => 'T',  name => 'Writer\'s Voice',               len => LEN_060,  link => 'http://www.writersvoice.net/'),
+     'YOHAF' => array(type => 'T',  name => 'Health &amp; Fitness',          len => LEN_060,  link => 'http://www.yourownhealthandfitness.org/'),
      );
 
 require('schedule/functions.php');
@@ -101,9 +106,10 @@ Legend: Music Program | <strong>Talk Program</strong><!-- | <span class="onair">
 <tr>
 <?php
    timeCell('1:00');
+
    showCell('wc', 4);
-   showCell('CMS', 4);
-   showCell('TBBA', 4);
+   showCell('CMS');
+   showCell('TBBA');
    showCell('SM');
 ?>
 </tr>
@@ -130,7 +136,7 @@ Legend: Music Program | <strong>Talk Program</strong><!-- | <span class="onair">
 <?php
    timeCell('3:00');
 
-   showCell('JV', 4);
+   showCell('JV');
    showCell('AW');
    showCell('HS');
 ?>
@@ -192,17 +198,17 @@ Legend: Music Program | <strong>Talk Program</strong><!-- | <span class="onair">
 
    showCell('AR');
    showCell('EU');
-   showCell('RSR', 1);
+   showCell('RSR');
    showCell('WS');
    showCell('CR');
-   showCell('TBBA', 4);
+   showCell('TBBA');
 ?>
 </tr>
 <tr>
 <?php
    timeCell('7:30');
 
-   showCell('TWO', 1);
+   showCell('TWO');
 ?>
 </tr>
 <tr>
@@ -242,7 +248,7 @@ Legend: Music Program | <strong>Talk Program</strong><!-- | <span class="onair">
    timeCell('10:00');
 
    showCell('WV');
-   showCell('JV', 4);
+   showCell('JV');
 ?>
 </tr>
 <tr>
@@ -268,12 +274,12 @@ Legend: Music Program | <strong>Talk Program</strong><!-- | <span class="onair">
 <?php
    timeCell('12:00pm');
 
-   showCell('IP', 1);
-   showCell('IP', 1);
-   showCell('IP', 1);
-   showCell('IP', 1);
-   showCell('IP', 1);
-   showCell('IP', 1);
+   showCell('IP');
+   showCell('IP');
+   showCell('IP');
+   showCell('IP');
+   showCell('IP');
+   showCell('IP');
    showCell('RPMH');
 ?>
 </tr>
@@ -281,12 +287,12 @@ Legend: Music Program | <strong>Talk Program</strong><!-- | <span class="onair">
 <?php
    timeCell('12:30');
 
-   showCell('mes', 1);
-   showCell('mes', 1);
-   showCell('mes', 1);
-   showCell('mes', 1);
-   showCell('mes', 1);
-   showCell('mes', 1);
+   showCell('mes', LEN_030);
+   showCell('mes', LEN_030);
+   showCell('mes', LEN_030);
+   showCell('mes', LEN_030);
+   showCell('mes', LEN_030);
+   showCell('mes', LEN_030);
 ?>
 </tr>
 <tr>
@@ -311,12 +317,12 @@ Legend: Music Program | <strong>Talk Program</strong><!-- | <span class="onair">
 <?php
    timeCell('2:00');
 
-   showCell('CMS', 4);
+   showCell('CMS');
    showCell('D');
    showCell('JCS');
-   showCell('BB', 1);
+   showCell('BB');
    showCell('CR');
-   showCell('TWO', 1);
+   showCell('TWO');
    showCell('HBTR');
 ?>
 </tr>
@@ -324,8 +330,8 @@ Legend: Music Program | <strong>Talk Program</strong><!-- | <span class="onair">
 <?php
    timeCell('2:30');
 
-   showCell('RSR', 1);
-   showCell('COL', 1);
+   showCell('RSR');
+   showCell('COL');
 ?>
 </tr>
 <tr>
@@ -371,7 +377,7 @@ Legend: Music Program | <strong>Talk Program</strong><!-- | <span class="onair">
    musicCell();
    showCell('D');
    showCell('S');
-   showCell('BB', 1);
+   showCell('BB');
    showCell('CR');
    showCell('RR');
    showCell('RPMH');
@@ -381,14 +387,14 @@ Legend: Music Program | <strong>Talk Program</strong><!-- | <span class="onair">
 <?php
    timeCell('5:30');
 
-   showCell('RSR', 1);
+   showCell('RSR');
 ?>
 </tr>
 <tr>
 <?php
    timeCell('6:00');
 
-   showCell('CMS', 4);
+   showCell('CMS');
    showCell('AW');
    showCell('SMH');
    showCell('JCS');
@@ -408,11 +414,11 @@ Legend: Music Program | <strong>Talk Program</strong><!-- | <span class="onair">
    timeCell('7:00');
 
    showCell('WS');
-   showCell('JV', 4);
+   showCell('JV');
    showCell('WV');
    showCell('AR');
    showCell('LOI');
-   showCell('CMS', 4);
+   showCell('CMS');
 ?>
 </tr>
 <tr>
@@ -444,7 +450,7 @@ Legend: Music Program | <strong>Talk Program</strong><!-- | <span class="onair">
 
    showCell('NL');
    showCell('HS');
-   showCell('PWS', 4);
+   showCell('PWS');
    showCell('RR');
    showCell('RR');
    showCell('S');
@@ -466,7 +472,7 @@ Legend: Music Program | <strong>Talk Program</strong><!-- | <span class="onair">
    showCell('LOI');
    showCell('BIM');
    showCell('SMH');
-   showCell('IP', 1);
+   showCell('IP');
 ?>
 </tr>
 <tr>
