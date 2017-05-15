@@ -51,19 +51,16 @@
 #caltable colgroup#date { 
   width: 13%;
 }
-#schedule table td,
-#schedule .onair { 
-  background-color: white;
+#schedule .music,
+#schedule table td {
+	//  background-color: white;
+	background-color: #d9ece2;
 }
 #schedule table td.offair {
   background-color: #ccc;
 }
 #schedule .talk, #schedule #note .talk { 
   background-color: #eec;
-}
-#schedule .music { 
-//  background-color: #cde;
-  background-color: #d9ece2;
 }
 #schedule .wc { 
   background-color: #eee;

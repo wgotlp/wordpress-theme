@@ -7,7 +7,6 @@ function createLink($type, $url, $text)
   $str = $text;
 
   if ($url != '') {
-    $tgt = '';
     if (strrpos($url, "http") === FALSE)
     {
       if ($type[0] == 'M') {
@@ -18,10 +17,7 @@ function createLink($type, $url, $text)
 
       $url = "/programming/" . $url . "/";
     }
-    else {
-       $tgt = "target=\"_blank\"";
-    }
-    $str = "<a $tgt href=\"" . $url . "\">$str</a>";
+    $str = "<a target=\"_blank\" href=\"" . $url . "\">$str</a>";
   }
   return $str;
 }
@@ -30,7 +26,7 @@ function createLink($type, $url, $text)
 // table cell wrapper
 function tableCell($str, $row_span, $col_span, $class = "")
 {
-  $cell = "        <td";
+  $cell = "    <td";
 
   if ($row_span > 1)
   {
@@ -84,23 +80,16 @@ function showCell($idx, $row_span = 2, $extra_info = "", $extra_style = "")
   {
     $class = "";
 
-    if ($show[$idx]['type'] == 'M')
-    {
-       $class .= "music ";
+    if ($show[$idx]['type'] == 'T') {
+       $class .= "talk";
     }
-	else {
-       $class .= "talk ";
-    }
-
-	if ($idx == 'wc')
-	{
-       $class .= "wc ";
+	else if ($idx == 'wc') {
+       $class .= "wc";
     }
 
     $cell_content = "";
 
-    if ($extra_info != "")
-    {
+    if ($extra_info != "") {
        $cell_content .= $extra_info;
     }
 
