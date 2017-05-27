@@ -21,3 +21,4 @@ skin/
 wp-content/uploads/
 wp-content/w3tc-config/
 /index.php
+.DS_Store

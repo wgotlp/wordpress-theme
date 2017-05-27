@@ -45,7 +45,7 @@ $show = array(
      'SM'    => array(type => 'M',  name => 'Sábado Musical',                len => LEN_060,  link => 'sabado-musical-2'),
      'S'     => array(type => 'T',  name => 'Stripped',                      len => LEN_060,  link => 'stripped'),
      'SMH'   => array(type => 'M',  name => 'Stripped Music Hour',           len => LEN_060,  link => 'stripped'),
-     'SHA'   => array(type => 'M',  name => 'Shadows',                       len => LEN_060,  link => ''),
+     'SHA'   => array(type => 'M',  name => 'Shadows',                       len => LEN_060,  link => 'shadows'),
      'SR'    => array(type => 'M',  name => 'Sweet Retreat',                 len => LEN_060,  link => 'sweet-retreat'),
      'TBBA'  => array(type => 'M',  name => 'Things be Blowin\' Around',     len => LEN_120,  link => 'things-be-blowin-around'),
      'TMSS'  => array(type => 'T',  name => 'The Michael Slate Show',        len => LEN_060,  link => 'http://www.kpfk.org/index.php/programs/51-michael-slate'),
