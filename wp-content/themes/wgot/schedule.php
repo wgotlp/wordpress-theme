@@ -39,7 +39,7 @@ $show = array(
      'MAL'   => array(type => 'M',  name => 'Malum',                         len => LEN_060,  link => 'malum'),
      'NL'    => array(type => 'M',  name => 'Noche Latina',                  len => LEN_060,  link => 'noche-latina'),
      'PWS'   => array(type => 'T',  name => 'Pow Wow Show',                  len => LEN_120,  link => 'http://thepowwowshow.net/'),
-     'RR'    => array(type => 'M',  name => 'Rad Radio',                     len => LEN_060,  link => ''),
+     'RR'    => array(type => 'M',  name => 'RAD Radio',                     len => LEN_060,  link => 'rad-radio'),
      'RSR'   => array(type => 'M',  name => 'Rootstock Radio',               len => LEN_030,  link => 'https://www.rootstock.coop/radio/'),
      'RPMH'  => array(type => 'M',  name => 'Red Pony Music Hour',           len => LEN_060,  link => 'red-pony-music-hour'),
      'SM'    => array(type => 'M',  name => 'Sábado Musical',                len => LEN_060,  link => 'sabado-musical-2'),
@@ -50,7 +50,7 @@ $show = array(
      'TBBA'  => array(type => 'M',  name => 'Things be Blowin\' Around',     len => LEN_120,  link => 'things-be-blowin-around'),
      'TMSS'  => array(type => 'T',  name => 'The Michael Slate Show',        len => LEN_060,  link => 'http://www.kpfk.org/index.php/programs/51-michael-slate'),
      'TWO'   => array(type => 'T',  name => 'This Way Out',                  len => LEN_030,  link => 'http://www.thiswayout.org/'),
-     'WS'    => array(type => 'M',  name => 'Woodsongs Radio',               len => LEN_060,  link => ''),
+     'WS'    => array(type => 'M',  name => 'Woodsongs Radio',               len => LEN_060,  link => 'http://www.woodsongs.com/'),
      'WV'    => array(type => 'T',  name => 'Writer\'s Voice',               len => LEN_060,  link => 'http://www.writersvoice.net/'),
      'YOHAF' => array(type => 'T',  name => 'Health &amp; Fitness',          len => LEN_060,  link => 'http://www.yourownhealthandfitness.org/'),
      );
@@ -486,13 +486,13 @@ Legend: <span class="music">Music Program</span> <span class="talk">Talk Program
 <?php
    timeCell('11:00');
 
-	showCell('SMH');
-	showCell('SHA');
-	showCell('HS');
-	showCell('BIM');
-	showCell('D');
-	showCell('BIM');
-	showCell('mes');
+   showCell('SMH');
+   showCell('SHA');
+   showCell('HS');
+   showCell('BIM');
+   showCell('D');
+   showCell('BIM');
+   showCell('mes');
 ?>
 </tr>
 <tr>
